@@ -7,7 +7,9 @@
     "depends": [
         "project",
     ],
-    "data": [],
+    "data": [
+        "views/project_project_views.xml",
+    ],
     "installable": True,
     "application": False,
     "license": "LGPL-3",

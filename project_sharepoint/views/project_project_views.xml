@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_project_form_sharepoint" model="ir.ui.view">
+        <field name="name">project.project.form.sharepoint</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.edit_project"/>
+
+        <field name="arch" type="xml">
+
+            <xpath expr="//sheet" position="inside">
+
+                <group string="SharePoint">
+
+                    <field name="sharepoint_url"/>
+
+                    <button
+                        name="action_open_sharepoint"
+                        type="object"
+                        string="Documents"
+                        class="btn-primary"/>
+
+                </group>
+
+            </xpath>
+
+        </field>
+
+    </record>
+
+</odoo>
